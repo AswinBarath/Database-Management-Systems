@@ -1,0 +1,473 @@
+
+SQL*Plus: Release 12.2.0.1.0 Production on Mon Feb 10 10:50:45 2020
+
+Copyright (c) 1982, 2016, Oracle.  All rights reserved.
+
+Enter user-name: students
+Enter password:
+ERROR:
+ORA-01017: invalid username/password; logon denied
+
+
+Enter user-name: system
+Enter password:
+Last Successful login time: Thu Feb 06 2020 09:17:59 +05:30
+
+Connected to:
+Oracle Database 12c Enterprise Edition Release 12.2.0.1.0 - 64bit Production
+
+SQL> \D
+SP2-0042: unknown command "\D" - rest of line ignored.
+SQL> \d
+SP2-0042: unknown command "\d" - rest of line ignored.
+SQL> SHOW TABLES;
+SP2-0158: unknown SHOW option "TABLES"
+SQL> CREATE TABLE jainstudents (usn VARCHAR(8) PRIMARY KEY NOT NULL, name VARCHAR, phoneno int, sgpa float);
+CREATE TABLE jainstudents (usn VARCHAR(8) PRIMARY KEY NOT NULL, name VARCHAR, phoneno int, sgpa float)
+                                                                            *
+ERROR at line 1:
+ORA-00906: missing left parenthesis
+
+
+SQL> CREATE TABLE jainstudents (usn VARCHAR(8) PRIMARY KEY NOT NULL, name VARCHAR(20), phoneno int, sgpa float);
+
+Table created.
+
+SQL> SELECT * FROM jainstudents;
+
+no rows selected
+
+SQL> INSERT INTO jainstudents(18BTRSE001, "xyz", 1098, 9.99);
+INSERT INTO jainstudents(18BTRSE001, "xyz", 1098, 9.99)
+                         *
+ERROR at line 1:
+ORA-00928: missing SELECT keyword
+
+
+SQL> INSERT INTO jainstudents VALUES (18BTRSE001, "xyz", 1098, 9.99);
+INSERT INTO jainstudents VALUES (18BTRSE001, "xyz", 1098, 9.99)
+                                   *
+ERROR at line 1:
+ORA-00917: missing comma
+
+
+SQL> INSERT INTO jainstudents VALUES (18BTRSE001, "xyz", 1098, 9.99);
+INSERT INTO jainstudents VALUES (18BTRSE001, "xyz", 1098, 9.99)
+                                   *
+ERROR at line 1:
+ORA-00917: missing comma
+
+
+SQL> INSERT INTO jainstudents VALUES(18BTRSE001, "xyz", 1098, 9.99);
+INSERT INTO jainstudents VALUES(18BTRSE001, "xyz", 1098, 9.99)
+                                  *
+ERROR at line 1:
+ORA-00917: missing comma
+
+
+SQL> INSERT INTO jainstudents values(18BTRSE001, "xyz", 1098, 9.99);
+INSERT INTO jainstudents values(18BTRSE001, "xyz", 1098, 9.99)
+                                  *
+ERROR at line 1:
+ORA-00917: missing comma
+
+
+SQL> INSERT INTO jainstudents values(18BTRSE1, "xyz", 1098, 9.99);
+INSERT INTO jainstudents values(18BTRSE1, "xyz", 1098, 9.99)
+                                  *
+ERROR at line 1:
+ORA-00917: missing comma
+
+
+SQL> INSERT INTO jainstudents values(18BTRSE001, 'xyz', 1098, 9.99);
+INSERT INTO jainstudents values(18BTRSE001, 'xyz', 1098, 9.99)
+                                  *
+ERROR at line 1:
+ORA-00917: missing comma
+
+
+SQL> INSERT INTO jainstudents values('18BTRSE001', 'xyz', 1098, 9.99);
+INSERT INTO jainstudents values('18BTRSE001', 'xyz', 1098, 9.99)
+                                *
+ERROR at line 1:
+ORA-12899: value too large for column "SYSTEM"."JAINSTUDENTS"."USN" (actual:
+10, maximum: 8)
+
+
+SQL> INSERT INTO jainstudents values('18BTRSE1', 'xyz', 1098, 9.99);
+
+1 row created.
+
+SQL> SELECT * FROM jainstudents;
+
+USN      NAME                    PHONENO       SGPA
+-------- -------------------- ---------- ----------
+18BTRSE1 xyz                        1098       9.99
+
+SQL> INSERT INTO jainstudents values('18BTRSE2', 'Ram', 9876543210, 8.92);
+
+1 row created.
+
+SQL> INSERT INTO jainstudents values('18BTRSE3', 'Sita', 9876533210, 6.12);
+
+1 row created.
+
+SQL> INSERT INTO jainstudents values('18BTRSE4', 'Hanuman', 9236533210, 5.99);
+
+1 row created.
+
+SQL> INSERT INTO jainstudents values('18BTRSE5', 'Laxmanan', 8236532410, 8.00);
+
+1 row created.
+
+SQL> INSERT INTO jainstudents values('18BTRSE6', 'Krishnan', 8236535510, 8.50);
+
+1 row created.
+
+SQL> INSERT INTO jainstudents values('18BTRSE7', 'Arjunan', 8236537610, 6.70);
+
+1 row created.
+
+SQL> INSERT INTO jainstudents values('18BTRSE8', 'Ravanan', 8234567890, 9.70);
+
+1 row created.
+
+SQL> INSERT INTO jainstudents values('18BTRSE9', 'Vali', 8234567891, 9.79);
+
+1 row created.
+
+SQL> INSERT INTO jainstudents values('18BTRSE0', 'abc', 1234, 7.79);
+
+1 row created.
+
+SQL> SELECT * FROM jainstudents;
+
+USN      NAME                    PHONENO       SGPA
+-------- -------------------- ---------- ----------
+18BTRSE1 xyz                        1098       9.99
+18BTRSE2 Ram                  9876543210       8.92
+18BTRSE3 Sita                 9876533210       6.12
+18BTRSE4 Hanuman              9236533210       5.99
+18BTRSE5 Laxmanan             8236532410          8
+18BTRSE6 Krishnan             8236535510        8.5
+18BTRSE7 Arjunan              8236537610        6.7
+18BTRSE8 Ravanan              8234567890        9.7
+18BTRSE9 Vali                 8234567891       9.79
+18BTRSE0 abc                        1234       7.79
+
+10 rows selected.
+
+SQL> SELECT * FROM jainstudents SORT BY DESC;
+SELECT * FROM jainstudents SORT BY DESC
+                                *
+ERROR at line 1:
+ORA-00933: SQL command not properly ended
+
+
+SQL> SELECT * FROM jainstudents SORT NAME BY DESC;
+SELECT * FROM jainstudents SORT NAME BY DESC
+                                *
+ERROR at line 1:
+ORA-00933: SQL command not properly ended
+
+
+SQL> SELECT * FROM jainstudents ORDER BY NAME DESC;
+
+USN      NAME                    PHONENO       SGPA
+-------- -------------------- ---------- ----------
+18BTRSE1 xyz                        1098       9.99
+18BTRSE0 abc                        1234       7.79
+18BTRSE9 Vali                 8234567891       9.79
+18BTRSE3 Sita                 9876533210       6.12
+18BTRSE8 Ravanan              8234567890        9.7
+18BTRSE2 Ram                  9876543210       8.92
+18BTRSE5 Laxmanan             8236532410          8
+18BTRSE6 Krishnan             8236535510        8.5
+18BTRSE4 Hanuman              9236533210       5.99
+18BTRSE7 Arjunan              8236537610        6.7
+
+10 rows selected.
+
+SQL> SELECT * FROM jainstudents ORDER BY NAME;
+
+USN      NAME                    PHONENO       SGPA
+-------- -------------------- ---------- ----------
+18BTRSE7 Arjunan              8236537610        6.7
+18BTRSE4 Hanuman              9236533210       5.99
+18BTRSE6 Krishnan             8236535510        8.5
+18BTRSE5 Laxmanan             8236532410          8
+18BTRSE2 Ram                  9876543210       8.92
+18BTRSE8 Ravanan              8234567890        9.7
+18BTRSE3 Sita                 9876533210       6.12
+18BTRSE9 Vali                 8234567891       9.79
+18BTRSE0 abc                        1234       7.79
+18BTRSE1 xyz                        1098       9.99
+
+10 rows selected.
+
+SQL> SELECT SGPA FROM jainstudents;
+
+      SGPA
+----------
+      9.99
+      8.92
+      6.12
+      5.99
+         8
+       8.5
+       6.7
+       9.7
+      9.79
+      7.79
+
+10 rows selected.
+
+SQL> CREATE TABLE SE(ID NUMBER(2), NAME VARCHAR(20), SGPA NUMBER(2), ATTENDANCE VARCHAR(1), DOJ DATE);
+
+Table created.
+
+SQL> INSERT INTO SE VALUES(06, VINAY, 10, P, 2020/02/05);
+INSERT INTO SE VALUES(06, VINAY, 10, P, 2020/02/05)
+                                     *
+ERROR at line 1:
+ORA-00984: column not allowed here
+
+
+SQL> INSERT INTO SE VALUES(06, 'VINAY', 10, 'P', 2020/02/05);
+INSERT INTO SE VALUES(06, 'VINAY', 10, 'P', 2020/02/05)
+                                                   *
+ERROR at line 1:
+ORA-00932: inconsistent datatypes: expected DATE got NUMBER
+
+
+SQL> INSERT INTO SE VALUES(06, 'VINAY', 10, 'P', '2020/02/05');
+INSERT INTO SE VALUES(06, 'VINAY', 10, 'P', '2020/02/05')
+                                            *
+ERROR at line 1:
+ORA-01861: literal does not match format string
+
+
+SQL> INSERT INTO SE VALUES(06, 'VINAY', 10, 'P', 2020-02-05);
+INSERT INTO SE VALUES(06, 'VINAY', 10, 'P', 2020-02-05)
+                                                   *
+ERROR at line 1:
+ORA-00932: inconsistent datatypes: expected DATE got NUMBER
+
+
+SQL> INSERT INTO SE VALUES(06, 'VINAY', 10, 'P', '2020-02-05');
+INSERT INTO SE VALUES(06, 'VINAY', 10, 'P', '2020-02-05')
+                                            *
+ERROR at line 1:
+ORA-01861: literal does not match format string
+
+
+SQL> INSERT INTO SE VALUES(06, 'VINAY', 10, 'P',date '2020-02-05');
+
+1 row created.
+
+SQL> SELECT * FROM SE;
+
+        ID NAME                       SGPA A DOJ
+---------- -------------------- ---------- - ---------
+         6 VINAY                        10 P 05-FEB-20
+
+SQL> CREATE TABLE STUDENTS(S_ID NUMBER(2), S_NO NUMBER(10), S_NAME VARCHAR(30), S_SGPA int, S_DEPT VARCHAR(4));
+CREATE TABLE STUDENTS(S_ID NUMBER(2), S_NO NUMBER(10), S_NAME VARCHAR(30), S_SGPA int, S_DEPT VARCHAR(4))
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+SQL> CREATE TABLE JSTUDENTS(S_ID NUMBER(2), S_NO NUMBER(10), S_NAME VARCHAR(30), S_SGPA int, S_DEPT VARCHAR(4));
+
+Table created.
+
+SQL> INSERT INTO JSTUDENTS(06, 12345, 'VINAY', 10, SE);
+INSERT INTO JSTUDENTS(06, 12345, 'VINAY', 10, SE)
+                      *
+ERROR at line 1:
+ORA-00928: missing SELECT keyword
+
+
+SQL> INSERT INTO JSTUDENTS VALUES(06, 12345, 'VINAY', 10, SE);
+INSERT INTO JSTUDENTS VALUES(06, 12345, 'VINAY', 10, SE)
+                                                     *
+ERROR at line 1:
+ORA-00984: column not allowed here
+
+
+SQL> INSERT INTO JSTUDENTS VALUES(06, 12345, 'VINAY', 10, 'SE');
+
+1 row created.
+
+SQL> INSERT INTO JSTUDENTS VALUES(12, 1234567, 'KISHORE', 11, 'SE');
+
+1 row created.
+
+SQL> INSERT INTO JSTUDENTS VALUES(22, 12345617, 'SHUBAM', 8, 'CTIS');
+
+1 row created.
+
+SQL> INSERT INTO JSTUDENTS VALUES(12, 12345617, 'HARI', 6, 'CTMA');
+
+1 row created.
+
+SQL> INSERT INTO JSTUDENTS VALUES(34, 12345617, 'KRISH', 7, 'AI');
+
+1 row created.
+
+SQL> INSERT INTO JSTUDENTS VALUES(13, 3412345617, 'HARSH', 9, 'DS');
+
+1 row created.
+
+SQL> INSERT INTO JSTUDENTS VALUES(16, 341234617, 'MUDIT', 10, 'SE');
+
+1 row created.
+
+SQL> INSERT INTO JSTUDENTS VALUES(27, 941234617, 'SARVESH', 10, 'SE');
+
+1 row created.
+
+SQL> INSERT INTO JSTUDENTS VALUES(23, 941234617, 'SAKTHI', 9, 'SE');
+
+1 row created.
+
+SQL> INSERT INTO JSTUDENTS VALUES(02, 941234617, 'AHMED', 10, 'SE');
+
+1 row created.
+
+SQL> SELECT * FROM JSTUDENTS;
+
+      S_ID       S_NO S_NAME                             S_SGPA S_DE
+---------- ---------- ------------------------------ ---------- ----
+         6      12345 VINAY                                  10 SE
+        12    1234567 KISHORE                                11 SE
+        22   12345617 SHUBAM                                  8 CTIS
+        12   12345617 HARI                                    6 CTMA
+        34   12345617 KRISH                                   7 AI
+        13 3412345617 HARSH                                   9 DS
+        16  341234617 MUDIT                                  10 SE
+        27  941234617 SARVESH                                10 SE
+        23  941234617 SAKTHI                                  9 SE
+         2  941234617 AHMED                                  10 SE
+
+10 rows selected.
+
+SQL> SELECT S_ID, S_NAME WHERE SGPA>7 AND S_DEPT="SE" OR S_DEPT="DS";
+SELECT S_ID, S_NAME WHERE SGPA>7 AND S_DEPT="SE" OR S_DEPT="DS"
+                    *
+ERROR at line 1:
+ORA-00923: FROM keyword not found where expected
+
+
+SQL> SELECT S_ID, S_NAME FROM JSTUDENTS WHERE SGPA>7 AND S_DEPT="SE" OR S_DEPT="DS";
+SELECT S_ID, S_NAME FROM JSTUDENTS WHERE SGPA>7 AND S_DEPT="SE" OR S_DEPT="DS"
+                                                                          *
+ERROR at line 1:
+ORA-00904: "DS": invalid identifier
+
+
+SQL> SELECT S_ID, S_NAME FROM JSTUDENTS WHERE SGPA>7 AND S_DEPT="SE" OR S_DEPT="AI";
+SELECT S_ID, S_NAME FROM JSTUDENTS WHERE SGPA>7 AND S_DEPT="SE" OR S_DEPT="AI"
+                                                                          *
+ERROR at line 1:
+ORA-00904: "AI": invalid identifier
+
+
+SQL> SELECT S_ID, S_NAME FROM JSTUDENTS WHERE SGPA>7 AND S_DEPT="SE" OR S_DEPT="CTMA";
+SELECT S_ID, S_NAME FROM JSTUDENTS WHERE SGPA>7 AND S_DEPT="SE" OR S_DEPT="CTMA"
+                                                                          *
+ERROR at line 1:
+ORA-00904: "CTMA": invalid identifier
+
+
+SQL> SELECT S_ID, S_NAME FROM JSTUDENTS WHERE SGPA>7 AND (S_DEPT="SE") OR (S_DEPT="CTMA");
+SELECT S_ID, S_NAME FROM JSTUDENTS WHERE SGPA>7 AND (S_DEPT="SE") OR (S_DEPT="CTMA")
+                                                                             *
+ERROR at line 1:
+ORA-00904: "CTMA": invalid identifier
+
+
+SQL> SELECT S_ID, S_NAME FROM JSTUDENTS WHERE SGPA>7 AND (S_DEPT="SE") OR (S_DEPT='CTMA');
+SELECT S_ID, S_NAME FROM JSTUDENTS WHERE SGPA>7 AND (S_DEPT="SE") OR (S_DEPT='CTMA')
+                                                            *
+ERROR at line 1:
+ORA-00904: "SE": invalid identifier
+
+
+SQL> SELECT S_ID, S_NAME FROM JSTUDENTS WHERE SGPA>7 AND (S_DEPT='SE') OR (S_DEPT='CTMA');
+SELECT S_ID, S_NAME FROM JSTUDENTS WHERE SGPA>7 AND (S_DEPT='SE') OR (S_DEPT='CTMA')
+                                         *
+ERROR at line 1:
+ORA-00904: "SGPA": invalid identifier
+
+
+SQL> SELECT S_ID, S_NAME FROM JSTUDENTS WHERE S_SGPA>7 AND (S_DEPT='SE') OR (S_DEPT='CTMA');
+
+      S_ID S_NAME
+---------- ------------------------------
+         6 VINAY
+        12 KISHORE
+        12 HARI
+        16 MUDIT
+        27 SARVESH
+        23 SAKTHI
+         2 AHMED
+
+7 rows selected.
+
+SQL> SELECT S_ID, S_NAME FROM JSTUDENTS WHERE S_SGPA>7 AND (S_DEPT='SE' OR S_DEPT='CTMA');
+
+      S_ID S_NAME
+---------- ------------------------------
+         6 VINAY
+        12 KISHORE
+        16 MUDIT
+        27 SARVESH
+        23 SAKTHI
+         2 AHMED
+
+6 rows selected.
+
+SQL> SELECT S_ID, S_NAME, S_SGPA FROM JSTUDENTS WHERE S_SGPA>7 AND (S_DEPT='SE' OR S_DEPT='CTMA');
+
+      S_ID S_NAME                             S_SGPA
+---------- ------------------------------ ----------
+         6 VINAY                                  10
+        12 KISHORE                                11
+        16 MUDIT                                  10
+        27 SARVESH                                10
+        23 SAKTHI                                  9
+         2 AHMED                                  10
+
+6 rows selected.
+
+SQL> SELECT S_ID, S_NAME, S_SGPA FROM JSTUDENTS WHERE S_SGPA>7 AND S_DEPT='SE' OR S_DEPT='CTMA';
+
+      S_ID S_NAME                             S_SGPA
+---------- ------------------------------ ----------
+         6 VINAY                                  10
+        12 KISHORE                                11
+        12 HARI                                    6
+        16 MUDIT                                  10
+        27 SARVESH                                10
+        23 SAKTHI                                  9
+         2 AHMED                                  10
+
+7 rows selected.
+
+SQL> SELECT S_ID, S_NAME, S_SGPA FROM JSTUDENTS WHERE (S_SGPA>7 AND S_SGPA<9) AND (S_DEPT='SE' OR S_DEPT='CTMA');
+
+no rows selected
+
+SQL> SELECT S_ID, S_NAME, S_SGPA FROM JSTUDENTS WHERE (S_SGPA>7 AND S_SGPA<11) AND (S_DEPT='SE' OR S_DEPT='CTMA');
+
+      S_ID S_NAME                             S_SGPA
+---------- ------------------------------ ----------
+         6 VINAY                                  10
+        16 MUDIT                                  10
+        27 SARVESH                                10
+        23 SAKTHI                                  9
+         2 AHMED                                  10
+
+SQL>
