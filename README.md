@@ -52,6 +52,7 @@ Whether you are a student, self-learner, or educator, this repo aims to make lea
   - [Changelog / Version History](#changelog--version-history)
   - [Related Resources](#related-resources)
   - [License](#license)
+  - [Repository Structure](#repository-structure)
 
 ---
 
@@ -132,5 +133,68 @@ A: All standard lab programs are covered with code, screenshots, and notes.
 ## License
 
 This repository is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+
+## Repository Structure
+
+Here is an overview of the files and folders in this repository:
+
+```
+Database-Management-Systems/
+├── Complete SQL and Databases Bootcamp Course/
+│   ├── 1.0 Course_Introduction.md                    # Course introduction notes
+│   ├── 1.1 SQL Bootcamp Course Outline.png          # Visual course outline
+│   ├── 4.0 Installation_Notes.md                    # Installation notes for SQL tools
+│   ├── 4.1 System Variables Setup Successful and PostgreSQL local setup connected with CMD success.PNG
+│   ├── 4.2 PostgreSQL local setup connected with CMD - System Variables Setup Successful.PNG
+│   ├── 4.3 ValentinaDB Setup Success.PNG
+│   ├── 4.4 ValentinaDB_Tips_Postgres_How_to_visually_build_DB.PNG
+│   ├── 4.5 ValentinaDB Load Data Dump.PNG
+│   ├── 4.6 ValentinaDB DB Dump Success.PNG
+│   └── 4.Data/
+│       ├── France.sql                               # France database dump
+│       ├── World.sql                                # World database dump
+│       ├── Store.sql                                # Store database dump
+│       └── Icon_                                    # Icon file
+│
+├── DBMS Lab/
+│   ├── 18BTRSE031_T.ASWIN_BARATH_DBMS_LAB_FILE (Experiments 5-12).docx  # Lab manual (Experiments 5-12)
+│   ├── 18BTRSE031_T.ASWIN_BARATH_DBMS_LAB_FILE.pdf                       # Lab manual (PDF)
+│   └── SQL(10-02-2020)/
+│       ├── SQL(10-2-2020).txt           # SQL scripts and session logs
+│       ├── Screenshot (31).png          # Output screenshot
+│       ├── Screenshot (32).png
+│       ├── Screenshot (33).png
+│       ├── Screenshot (34).png
+│       ├── Screenshot (35).png
+│       ├── Screenshot (36).png
+│       ├── Screenshot (37).png
+│       ├── Screenshot (38).png
+│       ├── Screenshot (39).png
+│       ├── Screenshot (40).png
+│       ├── Screenshot (41).png
+│       ├── Screenshot (42).png
+│       ├── Screenshot (43).png
+│       ├── Screenshot (44).png
+│       ├── Screenshot (45).png
+│       ├── Screenshot (46).png
+│       ├── Screenshot (47).png
+│       ├── Screenshot (48).png
+│       └── Screenshot (49).png
+│
+├── DBMS Notes/
+│   ├── 7.2. Resources for Databases _ SQL.docx   # Additional resources
+│   └── DBMS_Notes.pdf                            # Comprehensive DBMS notes
+│
+├── LICENSE
+└── README.md
+```
+
+- **Complete SQL and Databases Bootcamp Course/**: Contains course notes, installation guides, setup screenshots, and database dumps for hands-on practice.
+- **DBMS Lab/**: Contains lab manuals, SQL scripts, and screenshots of SQL outputs.
+- **DBMS Notes/**: Contains detailed DBMS notes and additional resources.
+- **LICENSE**: Repository license (MIT).
+- **README.md**: This file.
+
+---
 
 
