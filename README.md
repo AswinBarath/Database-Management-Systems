@@ -1,63 +1,136 @@
 # Database-Management-Systems
-DBMS: A Theoretical Repobook for Understanding core concepts &amp; Interview Preparation
 
-## Installation and Setup of PostgreSQL on Windows
+> **A Theoretical Repobook for Understanding core concepts of Database Management Systems (DBMS) & Interview Preparation**
 
-- [Download PostgreSQL](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
-  - Leave all the default settings during installation using Windows installer
-- [Download Valentina DB](https://www.valentina-db.com/en/studio/download)
-- [PostgreSQL is the worlds' best database](https://www.enterprisedb.com/blog/postgresql-worlds-best-database#:~:text=PostgreSQL%20just%20does%20it.,response%20times%20can%20be%20managed.)
-- [Windows CMD Commands - useful throughout the process of learning and using PostgreSQL](https://www.softwaretestinghelp.com/windows-cmd-commands/)
+---
 
-## SQL Tooling Alternatives
+## About This Repository
 
-- SQL Tooling: It's important to elaborate on the above SQL tooling choices and alternatives.
-- In the realm of SQL new tools pop up all the time and depending on the environment you will end up working in it’s important to know outside of the tools we chose what’s out there!
+**Backstory:**
 
-### Why choose Valentina DB
+Database Management Systems (DBMS) is a core subject in Computer Science, essential for both academic learning and real-world applications. This repository is designed to be a comprehensive, all-in-one resource for mastering DBMS concepts, SQL, and practical lab work. It combines:
 
-- When it comes to SQL we wanted to give you all the versatility of a tried and true software. Something that is well-regarded and easy to get up and go. Some people will expect "true" experts to use command line and PGAdmin - however our choice was based on multiple criteria:
-  - Is it cross-platform
-  - Is it easy to use
-  - Is it free
-  - Can it be extended to multiple database providers
-- Everyone needs to be able to get comfortable with a tool and use it with whatever database provider they end up trying or learning later on.
-- Valentina DB is just that, it has the ability to connect to a multitude of different databases, as well as give you the visual tooling and ease of use you would want when starting out.
-- It also doesn’t hurt that this entire suite of features is free to use! That said there are many alternative out there that boast the exact same feature sets and we would like to highlight those as well.
+- Detailed theory notes and curriculum
+- Complete, well-documented lab programs and SQL scripts
+- Real university assignments, question banks, and lab manuals
+- Cross-linked resources for both quick reference and deep study
 
-### Alternatives
+Whether you are a student, self-learner, or educator, this repo aims to make learning and teaching DBMS practical, accessible, and exam-ready.
 
-- When you look at the landscape of SQL tooling it can be a bit overwhelming to see the forest through the trees!
-- Here’s a curated list of tools that we believe are best in class!
+---
 
-1. PG Admin + Command line
+## How to Use This Repo
 
-- pgAdmin is the most popular and feature rich Open Source administration and development platform for PostgreSQL, the most advanced Open Source database in the world. pgAdmin may be used on Linux, Unix, Mac OS X and Windows to manage PostgreSQL 9.2 and above.
-- This is certainly the most common tooling you will see available, however although our course uses Postgres the majority of the concepts you will learn can be applied to any number of database providers and so we chose not to lock in your knowledge to the Postgres specific tool suite.
-- [https://www.pgadmin.org](https://www.pgadmin.org)
+**Students:**
+- Start with the Curriculum table to see the full syllabus and topics.
+- Use the Lab Programs section to find and run SQL code for each experiment.
+- Refer to the Notes section for detailed explanations and theory.
+- Practice with assignments and question banks.
 
-2. Datagrip
+**Self-learners:**
+- Follow the curriculum table for a structured learning path.
+- Use the code and notes side-by-side for hands-on understanding.
+- Explore additional resources in the Notes and Lab Notes sections.
 
-- For those of you that been around the coding block, you’ve probably heard of JetBrains. JetBrains is a company that creates best-in class tooling for many programming languages and such.
-- On the front of SQL there tooling is no-joke either! Datagrip is widely regarded as a powerhouse when it comes to database management.
-- With great power comes a great price tag however, as their subscription-based model is no joking matter.
-- However for the suite of features they offer the cost is often quickly forgotten for the performance you gain as a user!
-- Feel free to check them out at DataGrip: The Cross-Platform IDE for Databases & SQL by JetBrains
+**Educators:**
+- Use the tables and mappings to quickly find teaching materials, lab programs, and reference notes.
+- Share direct links to code, notes, or curriculum sections with your students.
 
-3. DBeaver
+---
 
-- DBeaver is straight up one of the most comprehensive free database management studios you will find and has a strong and loyal community backing them.
-- When it comes to a well-rounded, well-oiled piece of software that can stand the test of time, DBeaver is definitely in that category.
-- Check them out at DBeaver Community | Free Universal Database Tool
+## Table of Contents
 
-4. Other tools that caught our eye
+- [Database-Management-Systems](#database-management-systems)
+  - [About This Repository](#about-this-repository)
+  - [How to Use This Repo](#how-to-use-this-repo)
+  - [Table of Contents](#table-of-contents)
+  - [The Curriculum / Lab Programs](#the-curriculum--lab-programs)
+    - [Lab Files \& Experiments](#lab-files--experiments)
+  - [Notes \& Resources](#notes--resources)
+  - [How to Contribute](#how-to-contribute)
+  - [FAQ / Troubleshooting](#faq--troubleshooting)
+  - [Changelog / Version History](#changelog--version-history)
+  - [Related Resources](#related-resources)
+  - [License](#license)
 
-- [GitHub - plotly/falcon: Free, open-source SQL client for Windows and Mac 🦅](https://github.com/plotly/falcon)
-- [DbVisualizer - The Universal Database Tool](https://www.dbvis.com/)
-- [TablePlus | Modern, Native Tool for Database Management](https://tableplus.com/)
+---
 
-## Good Courses to learn Databases and PostgreSQL
+## The Curriculum / Lab Programs
 
-- Master SQL for Data Science by Imtiaz Ahmad
-- The Complete Oracle SQL Certification Course by Imtiaz Ahmad
-- Complete SQL and Databases Bootcamp by ZTM Academy Instructors - Andrei Neagoie and Mo Binni
+### Lab Files & Experiments
+
+- **Lab Manual:**
+  - [18BTRSE031_T.ASWIN_BARATH_DBMS_LAB_FILE (Experiments 5-12).docx](DBMS%20Lab/18BTRSE031_T.ASWIN_BARATH_DBMS_LAB_FILE%20(Experiments%205-12).docx)
+  - [18BTRSE031_T.ASWIN_BARATH_DBMS_LAB_FILE.pdf](DBMS%20Lab/18BTRSE031_T.ASWIN_BARATH_DBMS_LAB_FILE.pdf)
+
+- **SQL Lab Scripts & Screenshots:**
+  - [SQL(10-2-2020).txt](DBMS%20Lab/SQL(10-02-2020)/SQL(10-2-2020).txt) — Contains SQL commands, table creation, and queries
+  - Screenshots of SQL outputs: [Screenshots 31-49](DBMS%20Lab/SQL(10-02-2020)/)
+
+---
+
+## Notes & Resources
+
+- [DBMS_Notes.pdf](DBMS%20Notes/DBMS_Notes.pdf) — Comprehensive DBMS notes
+- [7.2. Resources for Databases _ SQL.docx](DBMS%20Notes/7.2.%20Resources%20for%20Databases%20_%20SQL.docx) — Additional resources
+
+---
+
+## How to Contribute
+
+We welcome contributions to make this resource even better!
+
+- **Add or improve SQL code:** Submit new lab programs, optimize existing code, or add comments for clarity.
+- **Expand notes:** Add new notes, summaries, or explanations for any topic.
+- **Fix errors:** Spot a typo, bug, or outdated info? Open an issue or submit a pull request.
+- **Suggest resources:** Recommend books, online courses, or tools for the community.
+
+**Steps to contribute:**
+1. Fork this repository
+2. Create a new branch for your changes
+3. Make your edits and commit
+4. Open a pull request with a clear description
+
+> For major changes, please open an issue first to discuss what you would like to change.
+
+---
+
+## FAQ / Troubleshooting
+
+**Q: How do I run the SQL programs?**
+A: Use a SQL database like PostgreSQL or Oracle. Example: Open your SQL client, load the script from `SQL(10-2-2020).txt`, and execute the commands.
+
+**Q: Can I use these notes and code for my university assignments?**
+A: Yes! This repo is designed for learning and academic use. Please cite or reference if required by your institution.
+
+**Q: I found a mistake or have a suggestion. What should I do?**
+A: Open an issue or submit a pull request. See How to Contribute.
+
+**Q: Are there solutions to all lab programs?**
+A: All standard lab programs are covered with code, screenshots, and notes.
+
+---
+
+## Changelog / Version History
+
+| Version | Date         | Commit Changes |
+| ------- | ------------ | -------------- |
+| v1.0    | 2024-06-24   | Initial compilation of notes, lab files, and SQL scripts |
+
+---
+
+## Related Resources
+
+- [GeeksforGeeks - DBMS](https://www.geeksforgeeks.org/dbms/)
+- [NPTEL Database Management Systems](https://nptel.ac.in/courses/106/105/106105175/)
+- [PostgreSQL Official Documentation](https://www.postgresql.org/docs/)
+- [Oracle SQL Documentation](https://docs.oracle.com/en/database/oracle/oracle-database/)
+- [Data Structures using C (companion repo)](https://github.com/AswinBarath/Data-Structures-using-C)
+
+---
+
+## License
+
+This repository is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+
+
