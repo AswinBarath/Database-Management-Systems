@@ -53,6 +53,7 @@ Whether you are a student, self-learner, or educator, this repo aims to make lea
   - [Related Resources](#related-resources)
   - [License](#license)
   - [Repository Structure](#repository-structure)
+  - [Community Standards & Health](#community-standards--health)
 
 ---
 
@@ -142,14 +143,14 @@ Here is an overview of the files and folders in this repository:
 Database-Management-Systems/
 ├── Complete SQL and Databases Bootcamp Course/
 │   ├── 1.0 Course_Introduction.md                    # Course introduction notes
-│   ├── 1.1 SQL Bootcamp Course Outline.png          # Visual course outline
+│   ├── 1_1_sql_bootcamp_course_outline.png          # Visual course outline
 │   ├── 4.0 Installation_Notes.md                    # Installation notes for SQL tools
-│   ├── 4.1 System Variables Setup Successful and PostgreSQL local setup connected with CMD success.PNG
-│   ├── 4.2 PostgreSQL local setup connected with CMD - System Variables Setup Successful.PNG
-│   ├── 4.3 ValentinaDB Setup Success.PNG
-│   ├── 4.4 ValentinaDB_Tips_Postgres_How_to_visually_build_DB.PNG
-│   ├── 4.5 ValentinaDB Load Data Dump.PNG
-│   ├── 4.6 ValentinaDB DB Dump Success.PNG
+│   ├── 4_1_system_variables_setup_successful_and_postgresql_local_setup_connected_with_cmd_success.png
+│   ├── 4_2_postgresql_local_setup_connected_with_cmd_system_variables_setup_successful.png
+│   ├── 4_3_valentinadb_setup_success.png
+│   ├── 4_4_valentinadb_tips_postgres_how_to_visually_build_db.png
+│   ├── 4_5_valentinadb_load_data_dump.png
+│   ├── 4_6_valentinadb_db_dump_success.png
 │   └── 4.Data/
 │       ├── France.sql                               # France database dump
 │       ├── World.sql                                # World database dump
@@ -194,6 +195,22 @@ Database-Management-Systems/
 - **DBMS Notes/**: Contains detailed DBMS notes and additional resources.
 - **LICENSE**: Repository license (MIT).
 - **README.md**: This file.
+
+---
+
+## Community Standards & Health
+
+This project follows open source community standards to ensure a healthy, secure, and welcoming environment for all contributors. Please review the following documents:
+
+- [Community Standards & Health Files](./COMMUNITY_STANDARDS.md) — Learn about the purpose and importance of community health files.
+- [Contributing Guidelines](./CONTRIBUTING.md) — How to contribute, submit issues, and open pull requests.
+- [Security Policy](./SECURITY.md) — How to report vulnerabilities and security issues.
+- [Code of Conduct](./CODE_OF_CONDUCT.md) — Expected behavior and community values.
+- Pull Request Template: All pull requests should follow the [template](.github/PULL_REQUEST_TEMPLATE.md) for consistency and quality.
+
+For more information on community standards, see:
+- [GitHub Docs: Community Profiles](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/about-community-profiles-for-public-repositories)
+- [Open Source Guides](https://opensource.guide/)
 
 ---
 
